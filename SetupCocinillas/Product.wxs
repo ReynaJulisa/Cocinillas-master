@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+	<Product Id="*" Name="Cocinillas" Language="1033" Version="1.0.0.0" Manufacturer="Javier Moreno" UpgradeCode="84fb6d61-1598-4692-97a7-38c61bf16dde">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="Una version mas reciente de Cocinillas esta instalada." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="Cocinillas" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="HelpComponents"/>
+      <ComponentGroupRef Id="RecetasComponents"/>
+      <ComponentGroupRef Id="ESPComponents"/>
+      <ComponentGroupRef Id="ENGComponents"/>
+      <ComponentRef Id="ApplicationShortcutDesktop"/>
+      
+		</Feature>
+	</Product>
+	<Fragment>
+    <!--Comprobacion .NET -->
+    <PropertyRef Id="NETFRAMEWORK30"/>
+    <Condition Message="La aplicacion requiere .NET Framework 3.0. Por favor instala .NET Framework luego vuelve a ejecutar el instalador.">
+     Installed OR ( NETFRAMEWORK45RELEASE AND NETFRAMEWORK45RELEASE >= "#379893" )
+    </Condition>
+    
+    <!--Creación de acceso directo en el escritorio-->
+		<Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="DesktopFolder" Name="Desktop">
+        <Component Id="ApplicationShortcutDesktop" Guid="*">
+            <Shortcut Id="ApplicationDesktopShortcut"
+                Name="Cocinillas"
+                Description="Acceso directo a Cocinillas"
+                Target="[INSTALLFOLDER]Cocinillas.exe"
+                WorkingDirectory="INSTALLFOLDER"/>
+            <RemoveFolder Id="DesktopFolder" On="uninstall"/>
+            <RegistryValue
+                Root="HKCU"
+                Key="Software/Cocinillas"
+                Name="installed"
+                Type="integer"
+                Value="1"
+                KeyPath="yes"/>
+        </Component>
+    </Directory>
+      <!--Directorios de instalación-->
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Cocinillas" >
+          <Directory Id="HELP" Name ="Ayuda"/>
+          <Directory Id="RECETAS" Name="Recetarios"/>
+          <Directory Id="ESP" Name="ES-ES"/>
+          <Directory Id="ENG" Name="EN-GB"/>
+        </Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+  <!--Ficheros que van en los directorios de instalación-->
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="ProductComponent">
+				<File Source ="$(var.Cocinillas.TargetPath)"></File>
+			</Component>
+		</ComponentGroup>
+   <ComponentGroup Id="HelpComponents" Directory="HELP">
+			<Component Id="HelpComponent">
+        	<File Source ="./Ayuda/Ayuda.chm"></File>
+			</Component>
+	 </ComponentGroup>
+   <ComponentGroup Id="RecetasComponents" Directory="RECETAS">
+			<Component Id="Recetas01Component">
+        	<File Source ="./Recetarios/recetario01.cocinillas"></File>
+			</Component>
+      <Component Id="Recetas02Component">
+        	<File Source ="./Recetarios/recetario02.cocinillas"></File>
+			</Component>
+	 </ComponentGroup>
+    <ComponentGroup Id="ESPComponents" Directory="ESP">
+      <Component Id="ESPComponent">
+        <File Id="esp" Source ="./ES-ES/Cocinillas.resources.dll"></File>
+      </Component>
+    </ComponentGroup>
+    <ComponentGroup Id="ENGComponents" Directory="ENG">
+      <Component Id="ENGComponent">
+        <File Id="eng" Source ="./EN-GB/Cocinillas.resources.dll"></File>
+      </Component>
+    </ComponentGroup>
+	</Fragment>
+</Wix>

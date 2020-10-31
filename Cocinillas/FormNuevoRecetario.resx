@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;labelFechaRecetario.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Descripcion</value>
+  </data>
+  <data name="cLBTipoRecetario.Items6" xml:space="preserve">
+    <value>Aperitivos</value>
+  </data>
+  <data name="&gt;&gt;bCancelarRecetario.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelFechaRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cLBTipoRecetario.Items2" xml:space="preserve">
+    <value>Postres</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelNombreRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="&gt;&gt;rTBDescripRecetario.Name" xml:space="preserve">
+    <value>rTBDescripRecetario</value>
+  </data>
+  <data name="cLBTipoRecetario.Items5" xml:space="preserve">
+    <value>Pastas</value>
+  </data>
+  <data name="labelFechaRecetario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelFechaRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bCancelarRecetario.Name" xml:space="preserve">
+    <value>bCancelarRecetario</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>424, 408</value>
+  </data>
+  <data name="cLBTipoRecetario.Items4" xml:space="preserve">
+    <value>Arroces</value>
+  </data>
+  <data name="bAceptarRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 337</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormNuevoRecetario</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;bColorRecetario.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelTipoRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 245</value>
+  </data>
+  <data name="bCancelarRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelTipoRecetario.Text" xml:space="preserve">
+    <value>Tipo Comida</value>
+  </data>
+  <data name="&gt;&gt;dTFechaRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelTipoRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="&gt;&gt;tbNombreRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbNombreRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 31</value>
+  </data>
+  <data name="&gt;&gt;rTBDescripRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbNombreRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bColorRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;bCancelarRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bColorRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 365</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bCancelarRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 373</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="dTFechaRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rTBDescripRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 100</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelNombreRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="&gt;&gt;labelTipoRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bAceptarRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bColorRecetario.Text" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="&gt;&gt;rTBDescripRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rTBDescripRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="labelTipoRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;bColorRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="dTFechaRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 20</value>
+  </data>
+  <data name="bAceptarRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;dTFechaRecetario.Name" xml:space="preserve">
+    <value>dTFechaRecetario</value>
+  </data>
+  <data name="labelNombreRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelFechaRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 75</value>
+  </data>
+  <data name="rTBDescripRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 121</value>
+  </data>
+  <data name="&gt;&gt;bColorRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cLBTipoRecetario.Items" xml:space="preserve">
+    <value>Carne</value>
+  </data>
+  <data name="labelNombreRecetario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelTipoRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rTBDescripRecetario.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bCancelarRecetario.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="labelFechaRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="&gt;&gt;cLBTipoRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bCancelarRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;dTFechaRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bAceptarRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelNombreRecetario.Name" xml:space="preserve">
+    <value>labelNombreRecetario</value>
+  </data>
+  <data name="labelNombreRecetario.Text" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="labelTipoRecetario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cLBTipoRecetario.Items3" xml:space="preserve">
+    <value>Bebidas</value>
+  </data>
+  <data name="cLBTipoRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 94</value>
+  </data>
+  <data name="bColorRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelFechaRecetario.Text" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="cLBTipoRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tbNombreRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 20</value>
+  </data>
+  <data name="&gt;&gt;cLBTipoRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cLBTipoRecetario.Items1" xml:space="preserve">
+    <value>Pescado</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;bAceptarRecetario.Name" xml:space="preserve">
+    <value>bAceptarRecetario</value>
+  </data>
+  <data name="&gt;&gt;bCancelarRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cLBTipoRecetario.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bAceptarRecetario.Text" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="&gt;&gt;labelNombreRecetario.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 121</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Nuevo Recetario</value>
+  </data>
+  <data name="&gt;&gt;tbNombreRecetario.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cLBTipoRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 245</value>
+  </data>
+  <data name="&gt;&gt;tbNombreRecetario.Name" xml:space="preserve">
+    <value>tbNombreRecetario</value>
+  </data>
+  <data name="rTBDescripRecetario.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelTipoRecetario.Name" xml:space="preserve">
+    <value>labelTipoRecetario</value>
+  </data>
+  <data name="&gt;&gt;cLBTipoRecetario.Name" xml:space="preserve">
+    <value>cLBTipoRecetario</value>
+  </data>
+  <data name="&gt;&gt;bAceptarRecetario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelFechaRecetario.Name" xml:space="preserve">
+    <value>labelFechaRecetario</value>
+  </data>
+  <data name="tbNombreRecetario.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dTFechaRecetario.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelNombreRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bAceptarRecetario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTipoRecetario.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="dTFechaRecetario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 75</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelFechaRecetario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelNombreRecetario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="&gt;&gt;bColorRecetario.Name" xml:space="preserve">
+    <value>bColorRecetario</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-GB</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
